@@ -19,17 +19,17 @@ nnoremap("<C-d>", "<C-d>zz")
 nnoremap("<C-u>", "<C-u>zz")
 
 -- greatest remap ever
-xnoremap("<leader>p", "\"_dP")
+xnoremap("<leader>p", '"_dP')
 
 -- next greatest remap ever : asbjornHaland
-nnoremap("<leader>y", "\"+y")
-vnoremap("<leader>y", "\"+y")
-nmap("<leader>Y", "\"+Y")
+nnoremap("<leader>y", '"+y')
+vnoremap("<leader>y", '"+y')
+nmap("<leader>Y", '"+Y')
 
-nnoremap("<leader>d", "\"_d")
-vnoremap("<leader>d", "\"_d")
+nnoremap("<leader>d", '"_d')
+vnoremap("<leader>d", '"_d')
 
-vnoremap("<leader>d", "\"_d")
+vnoremap("<leader>d", '"_d')
 
 -- This is going to get me cancelled
 inoremap("<C-c>", "<Esc>")
@@ -45,15 +45,15 @@ nnoremap("<leader>j", "<cmd>lprev<CR>zz")
 nnoremap("<leader>s", ":%s/\\<<C-r><C-w>\\>/<C-r><C-w>/gI<Left><Left><Left>")
 nnoremap("<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 
-
 -- Buffer navigation
 nnoremap("<S-l>", ":bnext<CR>")
 nnoremap("<S-h>", ":bprevious<CR>")
 nnoremap("<S-d>", ":bdelete<CR>")
 
+-- Format
+nnoremap("<leader>lf", "<cmd>:Neoformat<CR>")
 -- Window naviagation
 --nnoremap("<C-h>", "<C-w>h")
 --nnoremap("<C-j>", "<C-w>j")
 --nnoremap("<C-k>", "<C-w>k")
 --nnoremap("<C-l>", "<C-w>l")
-
