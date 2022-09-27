@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "create-fp-ts-lib": "^2.1.0"
+  }
+}
