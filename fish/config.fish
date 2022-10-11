@@ -1,6 +1,9 @@
 set fish_greeting
-
-set -gx TERM xterm-256color
+# set -gx TERM xterm-256color
+if status is-interactive
+and not set -q TMUX
+exec tmux
+end
 
 # theme
 set -g theme_color_scheme terminal-dark
