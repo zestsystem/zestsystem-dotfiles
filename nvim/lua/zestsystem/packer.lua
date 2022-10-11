@@ -47,18 +47,25 @@ return require("packer").startup(function()
 	use("mfussenegger/nvim-dap")
 	use("rcarriga/nvim-dap-ui")
 	use("theHamsta/nvim-dap-virtual-text")
-	use("akinsho/toggleterm.nvim")
 	use("lewis6991/gitsigns.nvim")
 
 	--NvimTree
 	use("kyazdani42/nvim-web-devicons")
-	use("kyazdani42/nvim-tree.lua")
-	use("windwp/nvim-autopairs")
-	use("windwp/nvim-ts-autotag")
 	use("akinsho/bufferline.nvim")
 	use({
 		"nvim-lualine/lualine.nvim",
 		requires = { "kyazdani42/nvim-web-devicons", opt = true },
+	})
+	use({
+		"folke/trouble.nvim",
+		requires = "kyazdani42/nvim-web-devicons",
+		config = function()
+			require("trouble").setup({
+				-- your configuration comes here
+				-- or leave it empty to use the default settings
+				-- refer to the configuration section below
+			})
+		end,
 	})
 	--[[
     --

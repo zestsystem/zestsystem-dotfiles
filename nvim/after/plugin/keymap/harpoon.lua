@@ -11,8 +11,8 @@ nnoremap("<leader><leader>g", function() require("harpoon.mark").add_file() end,
 nnoremap("<leader><leader>f", function() require("harpoon.ui").toggle_quick_menu() end, silent)
 nnoremap("<leader><leader>t", function() require("harpoon.cmd-ui").toggle_quick_menu() end, silent)
 
-nnoremap("<C-u>", function() require("harpoon.ui").nav_file(1) end, silent)
-nnoremap("<C-i>", function() require("harpoon.ui").nav_file(2) end, silent)
-nnoremap("<C-o>", function() require("harpoon.ui").nav_file(3) end, silent)
-nnoremap("<C-p>", function() require("harpoon.ui").nav_file(4) end, silent)
+nnoremap("<C-j>", function() require("harpoon.ui").nav_file(1) end, silent)
+nnoremap("<C-k>", function() require("harpoon.ui").nav_file(2) end, silent)
+nnoremap("<C-l>", function() require("harpoon.ui").nav_file(3) end, silent)
+nnoremap("<C-;>", function() require("harpoon.ui").nav_file(4) end, silent)
 

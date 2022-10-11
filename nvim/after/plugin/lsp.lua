@@ -108,6 +108,11 @@ local function config(_config)
 			nnoremap("]d", function()
 				vim.diagnostic.goto_prev()
 			end)
+			nnoremap("<leader>xx", "<cmd>TroubleToggle<CR>")
+            nnoremap("<leader>xw", "<cmd>TroubleToggle workspace_diagnostics<CR>")
+            nnoremap("<leader>xd", "<cmd>TroubleToggle document_diagnostics<CR>")
+            nnoremap("<leader>xq", "<cmd>TroubleToggle quickfix<CR>")
+            nnoremap("<leader>xl", "<cmd>TroubleToggle loclist<CR>")
 			nnoremap("<leader>vca", function()
 				vim.lsp.buf.code_action()
 			end)
@@ -127,6 +132,38 @@ end
 require("lspconfig").zls.setup(config())
 
 require("lspconfig").tsserver.setup(config())
+
+require("lspconfig").eslint.setup(config({
+	settings = {
+		codeAction = {
+			disableRuleComment = {
+				enable = true,
+				location = "separateLine",
+			},
+			showDocumentation = {
+				enable = true,
+			},
+		},
+		codeActionOnSave = {
+			enable = false,
+			mode = "all",
+		},
+		format = true,
+		nodePath = "",
+		onIgnoredFiles = "off",
+		packageManager = "npm",
+		quiet = false,
+		rulesCustomizations = {},
+		run = "onType",
+		useESLintClass = false,
+		validate = "on",
+		workingDirectory = {
+			mode = "location",
+		},
+	},
+}))
+
+require("lspconfig").jsonls.setup(config())
 
 require("lspconfig").ccls.setup(config())
 

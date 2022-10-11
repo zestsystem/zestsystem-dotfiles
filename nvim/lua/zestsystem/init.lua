@@ -5,9 +5,7 @@ require("zestsystem.debugger")
 require("zestsystem.lualine")
 require("zestsystem.gitsigns")
 require("zestsystem.bufferline")
-require("zestsystem.ts-autotag")
 require("zestsystem.mason")
-require("zestsystem.lspsaga")
 
 local augroup = vim.api.nvim_create_augroup
 zestsystemGroup = augroup('zestsystem', {})
