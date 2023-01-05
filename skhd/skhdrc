@@ -60,12 +60,16 @@ shift + lalt + lcmd + ctrl + ralt - 2 : yabai -m query --spaces --space | jq -re
 shift + lalt + lcmd + ctrl + ralt - 3 : yabai -m query --spaces --space | jq -re ".index" | xargs -I {} bash -c "if [[ '{}' = '5' ]]; then yabai -m window --space 6; elif [[ '{}' = '6' ]]; then yabai -m window --space 5; fi"
 
 # show next space per display
-#hyper - 1 : /Users/mikeyim/CustomScripts/SwitchSpaces/switchAndFocus.sh 1
-#hyper - 2 : /Users/mikeyim/CustomScripts/SwitchSpaces/switchAndFocus.sh 2
-#hyper - 3 : /Users/mikeyim/CustomScripts/SwitchSpaces/switchAndFocus.sh 3
-ctrl + alt + cmd + lshift - 1 : /Users/mikeyim/CustomScripts/SwitchSpaces/switchAndFocusSIP.sh 1
-ctrl + alt + cmd + lshift - 2 : /Users/mikeyim/CustomScripts/SwitchSpaces/switchAndFocusSIP.sh 2
-ctrl + alt + cmd + lshift - 3 : /Users/mikeyim/CustomScripts/SwitchSpaces/switchAndFocusSIP.sh 3
+hyper - 1 : /Users/mikeyim/CustomScripts/SwitchSpaces/switchAndFocus.sh 1
+hyper - 2 : /Users/mikeyim/CustomScripts/SwitchSpaces/switchAndFocus.sh 2
+hyper - 3 : /Users/mikeyim/CustomScripts/SwitchSpaces/switchAndFocus.sh 3
+#ctrl + alt + cmd + lshift - 1 : /Users/mikeyim/CustomScripts/SwitchSpaces/switchAndFocusSIP.sh 1
+#ctrl + alt + cmd + lshift - 2 : /Users/mikeyim/CustomScripts/SwitchSpaces/switchAndFocusSIP.sh 2
+#ctrl + alt + cmd + lshift - 3 : /Users/mikeyim/CustomScripts/SwitchSpaces/switchAndFocusSIP.sh 3
+
+lcmd - 1 : /Users/mikeyim/CustomScripts/SwitchSpaces/switchAndFocusSIP.sh 1
+lcmd - 2 : /Users/mikeyim/CustomScripts/SwitchSpaces/switchAndFocusSIP.sh 2
+lcmd - 3 : /Users/mikeyim/CustomScripts/SwitchSpaces/switchAndFocusSIP.sh 3
 
 ## toggle window fullscreen zoom
 hyper - f : yabai -m window --toggle zoom-fullscreen

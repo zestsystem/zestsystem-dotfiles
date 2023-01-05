@@ -1,0 +1,13 @@
+color = ''
+project-name = 'default'
+[default]
+account_id = 'acct_1Ixk44D5c4f29UZ3'
+device_name = 'Mikes-MacBook-Pro.local'
+display_name = 'Unite the Culture, LLC'
+live_mode_api_key = 'rk_live_***********************************************************************************************nx09'
+live_mode_key_expires_at = '2023-03-22'
+live_mode_pub_key = 'pk_live_51Ixk44D5c4f29UZ3BeGzgQFnN6FX5T1TIQJfWzXSUaqo5sRz2ocQs2iEuNwSRK9dEY4Qar2GDrvfXiQaAYbZbYnn002tXpjcOi'
+test_mode_api_key = 'rk_test_51Ixk44D5c4f29UZ3I3c6pE3sVoBO6ASPVl8Tk8lWL7BCkzxzi15GFEcBqiE3UqiFDpfODpWwEVOCAz4WvKQFuxdH00bcG3BppM'
+test_mode_key_expires_at = '2023-03-22'
+test_mode_pub_key = 'pk_test_51Ixk44D5c4f29UZ3BhcLgNXYv8ryXJerrUnstPzpYWlw4QUAmJdnLDYROQZK2h8lrTbWE5GQDqGXmdOMpiEq7uaH00kAiJgo9o'
+
