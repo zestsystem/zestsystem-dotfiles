@@ -1,15 +1,12 @@
-require'nvim-treesitter.configs'.setup {
-    ensure_installed = "all",
+require("nvim-treesitter.configs").setup({
+	ensure_installed = { "help", "javascript", "typescript", "c", "lua", "rust", "haskell" },
 
-    sync_install = false,
+	sync_install = false,
 
-    ignore_install = { "phpdoc", "tree-sitter-phpdoc" },
-    highlight = {
-        enable = true,
-        additional_vim_regex_highlighting = false,
-        disable = {"phpdoc", "tree-sitter-phpdoc"}
-    },
-    autopairs = {
-        enable = true,
-    },
-}
+	auto_intall = true,
+
+	highlight = {
+		enable = true,
+		additional_vim_regex_highlighting = false,
+	},
+})
